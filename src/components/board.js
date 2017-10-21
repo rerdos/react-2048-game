@@ -1,12 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import './board.css';
 
 const board = ({ board }) => (
-  <div>
+  <div className='board'>
     {board.map((row, index) => (
-      <div key={index}>
+      <div className='board__row' key={index}>
         {row.map((cell, index) => (
-          <span key={index}>{cell}</span>
+          <div className='board__column' key={index}>
+            <div className={`board__numberContainer board__${cell}`}>
+              {cell ? cell : ''}
+            </div>
+          </div>
         ))}
       </div>
     ))}

@@ -1,6 +1,14 @@
-import { INIT_NEW_GAME, GENERATE_NUMBERS, SWIPE_DOWN } from './../constants';
+import {
+  INIT_NEW_GAME,
+  GENERATE_NUMBERS,
+  SWIPE_DOWN,
+  SWIPE_UP,
+  SWIPE_RIGHT,
+  SWIPE_LEFT
+} from './../constants';
 import putRandomNumber from './../helpers/generateNumber';
-import swipeDown from './../helpers/swipeDown';
+import swipeVertical from './../helpers/swipeVertical';
+import swipeHorizontal from './../helpers/swipeHorizontal';
 
 const newGameBoard = [
   [0, 0, 0, 0],
@@ -16,7 +24,13 @@ export default (state = newGameBoard, { type }) => {
     case GENERATE_NUMBERS:
       return putRandomNumber(state);
     case SWIPE_DOWN:
-      return swipeDown(state);
+      return swipeVertical(state, 'down');
+    case SWIPE_UP:
+      return swipeVertical(state, 'up');
+    case SWIPE_LEFT:
+      return swipeHorizontal(state, 'left');
+    case SWIPE_RIGHT:
+      return swipeHorizontal(state, 'right');
     default:
       return state;
   }

@@ -1,0 +1,88 @@
+.board {
+  border-radius: 5px;
+  color: #776e66;
+  background-color: #bbada1;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.board__row {
+  display: flex;
+}
+.board__column {
+  width: 25%;
+  height: 100px;
+  display: flex;
+}
+.board__numberContainer {
+  border-radius: 5px;
+  width: 100%;
+  margin: 5px;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board__0 {
+  background-color: #ccc0b4;
+}
+
+.board__2 {
+  background-color: #eee4db;
+}
+
+.board__4 {
+  background-color: #eddfc7;
+}
+
+.board__8 {
+  color: #f9f6f2;
+  background-color: #f1b17d;
+}
+
+.board__16 {
+  color: #f9f6f2;
+  background-color: #f39568;
+}
+
+.board__16 {
+  color: #f9f6f2;
+  background-color: #f39568;
+}
+
+.board__32 {
+  color: #f9f6f2;
+  background-color: #f47c64;
+}
+
+.board__64 {
+  color: #f9f6f2;
+  background-color: #f36043;
+}
+
+.board__128 {
+  color: #f9f6f2;
+  background-color: #edcd78;
+}
+
+.board__256 {
+  color: #f9f6f2;
+  background-color: #eccb6b;
+}
+
+.board__512 {
+  color: #f9f6f2;
+  background-color: #ebc75a;
+}
+
+.board__1024 {
+  color: #f9f6f2;
+  background-color: #ecc44c;
+}
+
+.board__2048 {
+  color: #f9f6f2;
+  background-color: #ebc040;
+}
