@@ -64,25 +64,30 @@
 
 .board__128 {
   color: #f9f6f2;
+  font-size: 45px;
   background-color: #edcd78;
 }
 
 .board__256 {
   color: #f9f6f2;
+  font-size: 45px;
   background-color: #eccb6b;
 }
 
 .board__512 {
   color: #f9f6f2;
+  font-size: 45px;
   background-color: #ebc75a;
 }
 
 .board__1024 {
   color: #f9f6f2;
+  font-size: 35px;
   background-color: #ecc44c;
 }
 
 .board__2048 {
   color: #f9f6f2;
+  font-size: 35px;
   background-color: #ebc040;
 }
